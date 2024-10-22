@@ -1,63 +1,60 @@
-const fs = require("fs");
-const fetch = require("node-fetch"); // Pastikan untuk mengimpor fetch jika kamu menggunakan Node.js
+import fs from 'fs';
+import fetch from 'node-fetch';
 
 async function generateJsonDB() {
   try {
-    // URL untuk mengambil daftar Pokémon dengan limit 100
-    const pokemonApiURL = "https://pokeapi.co/api/v2/pokemon/?limit=100";
-    const pokemonList = await fetch(pokemonApiURL).then((res) => res.json());
+    const pokemonApiURL = 'https://pokeapi.co/api/v2/pokemon?limit=100';
+    const pokemonListResponse = await fetch(pokemonApiURL);
+    const pokemonList = await pokemonListResponse.json();
+    
+    const payload = [];
 
-    const payload = []; // Array untuk menyimpan data Pokémon
-
-    // Loop untuk mengambil detail dari setiap Pokémon
-    for (let index = 0; index < pokemonList.results.length; index++) {
-      const pokemon = pokemonList.results[index];
-
+    for (const pokemon of pokemonList.results) {
       // Ambil detail Pokémon dari URL
       const detailResponse = await fetch(pokemon.url);
       const detail = await detailResponse.json();
 
-      // Ambil species untuk evolution chain
+      // Ambil data evolusi
       const speciesResponse = await fetch(detail.species.url);
       const species = await speciesResponse.json();
-
-      // Ambil evolution chain
       const evolutionChainResponse = await fetch(species.evolution_chain.url);
-      const evolutionChainData = await evolutionChainResponse.json();
+      const evolutionChain = await evolutionChainResponse.json();
 
-      // Membangun evolution chain
       const evolutionChains = [];
-      let current = evolutionChainData.chain;
+      let currentEvo = evolutionChain.chain;
 
-      // Loop untuk mendapatkan seluruh rantai evolusi
-      do {
-        evolutionChains.push(current.species.name);
-        current = current.evolves_to[0]; // Ambil evolusi berikutnya
-      } while (current && current.evolves_to.length > 0);
+      // Ambil chain evolusi
+      while (currentEvo) {
+        evolutionChains.push(currentEvo.species.name);
+        currentEvo = currentEvo.evolves_to[0];
+      }
 
-      // Struktur data sesuai dengan requirement
+      // Tambahkan data Pokémon ke payload
       const item = {
         id: detail.id,
         name: detail.name,
-        types: detail.types.map((typeInfo) => typeInfo.type.name), // Menambahkan types di sini
+        types: detail.types.map((type) => type.type.name),
+        abilities: detail.abilities.map((ability) => ability.ability.name),
         height: detail.height,
         weight: detail.weight,
         cries: {
           latest: `https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/${detail.id}.ogg`,
           legacy: `https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/${detail.id}.ogg`,
         },
-        abilities: detail.abilities.map((abilityInfo) => abilityInfo.ability.name),
         evolutionChains: evolutionChains,
       };
 
-      payload.push(item); // Tambahkan item ke array payload
+      payload.push(item);
     }
 
-    // Simpan data ke file db.json
-    fs.writeFileSync("db.json", JSON.stringify(payload, null, 2));
-    console.log("Database created with Pokémon data in db.json");
+    // Simpan hasil ke dalam db.json
+    fs.writeFileSync('db.json', JSON.stringify(payload, null, 2));
+    
+    // Menampilkan output di console
+    console.log('Database created with Pokémon data in db.json');
+    console.log(JSON.stringify(payload, null, 2)); // Menampilkan data yang dihasilkan
   } catch (error) {
-    console.error(error);
+    console.error('Error:', error);
   }
 }
 
