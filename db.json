@@ -1,3 +1,456 @@
 {
-  "pokemon": []
+  "pokemon": [
+    {
+      "id": 1,
+      "name": "bulbasaur",
+      "height": 7,
+      "weight": 69,
+      "cries": {
+        "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1.ogg",
+        "legacy": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/1.ogg"
+      },
+      "abilities": [
+        "overgrow",
+        "chlorophyll"
+      ],
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "evolutionChains": [
+        "bulbasaur",
+        "ivysaur",
+        "venusaur"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "ivysaur",
+      "height": 10,
+      "weight": 130,
+      "cries": {
+        "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/2.ogg",
+        "legacy": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/2.ogg"
+      },
+      "abilities": [
+        "overgrow",
+        "chlorophyll"
+      ],
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "evolutionChains": [
+        "bulbasaur",
+        "ivysaur",
+        "venusaur"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "venusaur",
+      "height": 20,
+      "weight": 1000,
+      "cries": {
+        "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/3.ogg",
+        "legacy": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/3.ogg"
+      },
+      "abilities": [
+        "overgrow",
+        "chlorophyll"
+      ],
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "evolutionChains": [
+        "bulbasaur",
+        "ivysaur",
+        "venusaur"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "charmander",
+      "height": 6,
+      "weight": 85,
+      "cries": {
+        "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/4.ogg",
+        "legacy": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/4.ogg"
+      },
+      "abilities": [
+        "blaze",
+        "solar-power"
+      ],
+      "types": [
+        "fire"
+      ],
+      "evolutionChains": [
+        "charmander",
+        "charmeleon",
+        "charizard"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "charmeleon",
+      "height": 11,
+      "weight": 190,
+      "cries": {
+        "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/5.ogg",
+        "legacy": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/5.ogg"
+      },
+      "abilities": [
+        "blaze",
+        "solar-power"
+      ],
+      "types": [
+        "fire"
+      ],
+      "evolutionChains": [
+        "charmander",
+        "charmeleon",
+        "charizard"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "charizard",
+      "height": 17,
+      "weight": 905,
+      "cries": {
+        "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/6.ogg",
+        "legacy": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/6.ogg"
+      },
+      "abilities": [
+        "blaze",
+        "solar-power"
+      ],
+      "types": [
+        "fire",
+        "flying"
+      ],
+      "evolutionChains": [
+        "charmander",
+        "charmeleon",
+        "charizard"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "squirtle",
+      "height": 5,
+      "weight": 90,
+      "cries": {
+        "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/7.ogg",
+        "legacy": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/7.ogg"
+      },
+      "abilities": [
+        "torrent",
+        "rain-dish"
+      ],
+      "types": [
+        "water"
+      ],
+      "evolutionChains": [
+        "squirtle",
+        "wartortle",
+        "blastoise"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "wartortle",
+      "height": 10,
+      "weight": 225,
+      "cries": {
+        "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/8.ogg",
+        "legacy": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/8.ogg"
+      },
+      "abilities": [
+        "torrent",
+        "rain-dish"
+      ],
+      "types": [
+        "water"
+      ],
+      "evolutionChains": [
+        "squirtle",
+        "wartortle",
+        "blastoise"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "blastoise",
+      "height": 16,
+      "weight": 855,
+      "cries": {
+        "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/9.ogg",
+        "legacy": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/9.ogg"
+      },
+      "abilities": [
+        "torrent",
+        "rain-dish"
+      ],
+      "types": [
+        "water"
+      ],
+      "evolutionChains": [
+        "squirtle",
+        "wartortle",
+        "blastoise"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "caterpie",
+      "height": 3,
+      "weight": 29,
+      "cries": {
+        "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10.ogg",
+        "legacy": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/10.ogg"
+      },
+      "abilities": [
+        "shield-dust",
+        "run-away"
+      ],
+      "types": [
+        "bug"
+      ],
+      "evolutionChains": [
+        "caterpie",
+        "metapod",
+        "butterfree"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "metapod",
+      "height": 7,
+      "weight": 99,
+      "cries": {
+        "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/11.ogg",
+        "legacy": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/11.ogg"
+      },
+      "abilities": [
+        "shed-skin"
+      ],
+      "types": [
+        "bug"
+      ],
+      "evolutionChains": [
+        "caterpie",
+        "metapod",
+        "butterfree"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "butterfree",
+      "height": 11,
+      "weight": 320,
+      "cries": {
+        "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/12.ogg",
+        "legacy": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/12.ogg"
+      },
+      "abilities": [
+        "compound-eyes",
+        "tinted-lens"
+      ],
+      "types": [
+        "bug",
+        "flying"
+      ],
+      "evolutionChains": [
+        "caterpie",
+        "metapod",
+        "butterfree"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "weedle",
+      "height": 3,
+      "weight": 32,
+      "cries": {
+        "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/13.ogg",
+        "legacy": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/13.ogg"
+      },
+      "abilities": [
+        "shield-dust",
+        "run-away"
+      ],
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "evolutionChains": [
+        "weedle",
+        "kakuna",
+        "beedrill"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "kakuna",
+      "height": 6,
+      "weight": 100,
+      "cries": {
+        "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/14.ogg",
+        "legacy": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/14.ogg"
+      },
+      "abilities": [
+        "shed-skin"
+      ],
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "evolutionChains": [
+        "weedle",
+        "kakuna",
+        "beedrill"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "beedrill",
+      "height": 10,
+      "weight": 295,
+      "cries": {
+        "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/15.ogg",
+        "legacy": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/15.ogg"
+      },
+      "abilities": [
+        "swarm",
+        "sniper"
+      ],
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "evolutionChains": [
+        "weedle",
+        "kakuna",
+        "beedrill"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "pidgey",
+      "height": 3,
+      "weight": 18,
+      "cries": {
+        "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/16.ogg",
+        "legacy": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/16.ogg"
+      },
+      "abilities": [
+        "keen-eye",
+        "tangled-feet",
+        "big-pecks"
+      ],
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "evolutionChains": [
+        "pidgey",
+        "pidgeotto",
+        "pidgeot"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "pidgeotto",
+      "height": 11,
+      "weight": 300,
+      "cries": {
+        "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/17.ogg",
+        "legacy": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/17.ogg"
+      },
+      "abilities": [
+        "keen-eye",
+        "tangled-feet",
+        "big-pecks"
+      ],
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "evolutionChains": [
+        "pidgey",
+        "pidgeotto",
+        "pidgeot"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "pidgeot",
+      "height": 15,
+      "weight": 395,
+      "cries": {
+        "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/18.ogg",
+        "legacy": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/18.ogg"
+      },
+      "abilities": [
+        "keen-eye",
+        "tangled-feet",
+        "big-pecks"
+      ],
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "evolutionChains": [
+        "pidgey",
+        "pidgeotto",
+        "pidgeot"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "rattata",
+      "height": 3,
+      "weight": 35,
+      "cries": {
+        "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/19.ogg",
+        "legacy": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/19.ogg"
+      },
+      "abilities": [
+        "run-away",
+        "guts",
+        "hustle"
+      ],
+      "types": [
+        "normal"
+      ],
+      "evolutionChains": [
+        "rattata",
+        "raticate"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "raticate",
+      "height": 7,
+      "weight": 185,
+      "cries": {
+        "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/20.ogg",
+        "legacy": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/20.ogg"
+      },
+      "abilities": [
+        "run-away",
+        "guts",
+        "hustle"
+      ],
+      "types": [
+        "normal"
+      ],
+      "evolutionChains": [
+        "rattata",
+        "raticate"
+      ]
+    }
+  ]
 }
