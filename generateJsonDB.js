@@ -9,6 +9,14 @@ async function generateJsonDB() {
   const pokemonApiURL = "https://pokeapi.co/api/v2/pokemon/?limit=100";
   const pokemonList = await fetch(pokemonApiURL).then((res) => res.json());
   console.log(pokemonList);
+  for (let index = 0; index < pokemonList.results.length; index++) {
+    const pokemon = pokemonList.results[index];
+    
+    // Ambil detail Pokémon dari URL
+    const detailResponse = await fetch(pokemon.url);
+    const detail = await detailResponse.json();
+    console.log(detail);
+  }
 } catch (error) {
   console.error(error);
 }
